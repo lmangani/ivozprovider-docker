@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install wget \
  && echo deb http://packages.irontec.com/debian chloe main > klear.list \
  && wget http://packages.irontec.com/public.key -q -O - | apt-key add - \
  && apt-get update && apt-get install ivozprovider \
- && apt-get clean && && apt-get autoremove \
+ && apt-get clean && apt-get autoremove \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
  
  # dpkg-reconfigure ivozprovider
